@@ -1,0 +1,30 @@
+<head>
+  <script src="https://content.jwplatform.com/libraries/Fp2hXm3I.js">
+  </script>
+</head>
+
+<body>
+
+  <div id="easyElement"></div>
+
+  <script type="text/javascript">
+
+    var player = jwplayer("easyElement");
+
+    player.setup({
+      "file": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/EasyVideo.mp4",
+      "image": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/EasyImage.jpg",
+      "advertising": {
+          "client": "vast",
+          "tag": "https://playertest.longtailvideo.com/vast-30s-ad.xml",
+          "offset": 10
+      }
+    });
+
+    player.on('adImpression',function(event){
+      alert("The ad impression was fired.");
+});
+
+  </script>
+
+</body>

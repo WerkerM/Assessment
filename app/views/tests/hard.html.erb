@@ -1,0 +1,31 @@
+<head>
+  <script src="https://content.jwplatform.com/libraries/Fp2hXm3I.js">
+  </script>
+</head>
+
+<body>
+
+  <div id="hardElement"></div>
+  <img id="hardImage" src="https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/HardImage1.jpg" width="480" height="270">
+
+
+  <script type="text/javascript">
+
+    var player = jwplayer("hardElement");
+
+    player.setup({
+      "file": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/MediumVideo.mp4",
+      "image": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/MediumImage.jpg",
+      "autostart": false
+    });
+
+	  player.on('time', function(event){
+		  if (event.position > 5) {
+			player.pause();
+      document.getElementById("hardImage").src="https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/HardImage2.jpg";
+		  }
+	  });
+
+  </script>
+
+</body>

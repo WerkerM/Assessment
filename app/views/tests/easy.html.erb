@@ -1,0 +1,24 @@
+<head>
+  <script src="https://content.jwplatform.com/libraries/Fp2hXm3I.js">
+  </script>
+</head>
+
+<body>
+
+  <div id="easyElement"></div>
+
+  <script type="text/javascript">
+
+    var player = jwplayer("easyElement");
+
+    player.setup({
+      "file": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/EasyVideo.mp4",
+      "image": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/EasyImage.jpg"
+    });
+
+    player.on('complete', function() {
+      alert("thanks for watching!")
+    })
+  </script>
+
+</body>

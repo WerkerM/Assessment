@@ -1,0 +1,57 @@
+<h1>Hi. Welcome to Michael Handwerker's Tech Assessment</h1><br>
+<%= link_to 'Easy Test', '/easy' %><br>
+<%= link_to 'Medium Test', '/medium' %><br>
+<%= link_to 'Hard Test', '/hard' %><br>
+<%= link_to 'Extra Credit 1', '/extra_credit_1' %><br>
+<%= link_to 'Extra Credit 2', '/extra_credit_2' %><br><br>
+
+<h3>Answers to the questions:</h3>
+
+MP4: Today’s format of choice for video/audio files. It is high quality and can be played in all browsers and devices.
+<br><br>
+WebM: Similar to MP4 in quality, but doesn’t have 100% complete browser and device support. Developed by Google, it is open source, so it’s royalty-free.
+<br><br>
+FLV: Adobe’s Flash is another video container format, but it requires flash to run, so it is much less universally compatible. iPhone and Chrome both put active impediments to Flash.
+<br><br>
+HLS: HTTP Live Streaming is a streaming protocol that allows users to modify streaming specifications. It essentially chops up MP4 files into smaller chunks to deliver the content to customers, and be adjusted during the stream. Content providers can encode at multiple quality settings, and it maps to clients bsed on screen size and available bandwidth.
+<br><br>
+RTMP: Real-Time Messaging Protocol is essentially the forerunner to HLS, used for Flash files. It is still in use, but mainly in legacy codebases.
+<br><br>
+DASH:  Dynamic Adaptive Streaming for HTTP is a competitor to HLS as an adaptive bitrate protocol. While it offers some advantages, such as being codec agnostic, it has one significant drawback, it is not supported by Apple (Safari and iOS).
+<br><br>
+VAST: Video Ad-Serving Template allows for serving ads in video players. The key information it supplies are which ad to display, where the ad should play on the screen, how long the ad is, if the ad should be skippable and what the destination url should be should the user click the ad.
+<br><br>
+VPAID: Video Player Ad Interface Definition, often embedded in VAST allows ads to be more interactive. It could allow inframe popups on events like click or hover, or even allow viewers to play a game within the ad.
+<br><br>
+VMAP: Video Multiple Ad Playlists allow for multiple ads to be shown at intervals during video playback. The bane of YouTubeTV users.
+<br><br>
+WideVine: WideVine is Google’s digital rights management (DRM) software, used to protect premium content online through encryption. It is very widely used, including by Amazon, Netflix, Hulu and Spotify. It is compatible with Google browsers and devices, and many streaming devices and TVs.
+<br><br>
+PlayReady: Microsoft’s DRM. It is compatible with Microsoft browsers and devices, and many streaming devices and TVs.
+<br><br>
+FairPlay: Apple’s DRM. It is compatible with Apple browsers and devices, and many streaming devices and TVs.
+<br><br><br>
+Which of the above video formats do not work on mobile devices?
+<br><br>
+Answer: Flash
+<br><br><br>
+Would you expect the following VAST ad tag to deliver an ad correctly with our player assuming the viewer is using an up-to-date version of Chrome?
+<br>
+https://playertest.longtailvideo.com/vast-30s-ad.xml
+<br><br>
+Answer: Using the JWPlayer Ad Tester, I tested it, and it worked.
+
+<br><br><br>
+What is the duration of the ad delivered by the ad tag?
+<br><br>
+Answer: 30 seconds
+<br><br><br>
+Extra Credit 1)<br><br>
+Why is this video not displaying correctly on a desktop browser?
+<br><br>
+Answer: You left off the quotations marks around the div ID.
+<br><br><br>
+Why is this video not displaying correctly on a mobile device?
+<br><br>
+Answer: It is in Flash format.
+<br><br><br><br>

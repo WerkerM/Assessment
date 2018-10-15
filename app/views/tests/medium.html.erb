@@ -1,0 +1,34 @@
+<head>
+  <script src="https://content.jwplatform.com/libraries/Fp2hXm3I.js">
+  </script>
+</head>
+
+<body>
+
+  <div id="mediumElement"></div>
+  <h3 id="load">Load video</h3>
+  <h3 id="play">Play video</h3>
+
+  <script type="text/javascript">
+
+    var player = jwplayer("mediumElement");
+
+    player.setup({
+      "file": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/MediumVideo.mp4",
+      "image": "https://s3.amazonaws.com/bob.jwplayer.com/~test/assets/MediumImage.jpg",
+      "autostart": false
+    });
+
+    document.getElementById("load").addEventListener("click", playerLoad)
+    document.getElementById("play").addEventListener("click", playerPlay)
+
+    function playerLoad() {
+    	player.load();
+		    }
+
+    function playerPlay() {
+    	player.play();
+		    }
+  </script>
+
+</body>
